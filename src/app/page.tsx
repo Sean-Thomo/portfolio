@@ -9,10 +9,10 @@ export default function Home() {
         {/* Navbar */}
         <Navbar />
         {/* Intro Text */}
-        <div className="min-h-screen place-content-center flex  flex-col ">
-          <div className="grid gap-8 justify-center items-start">
+        <div className="min-h-screen place-content-center flex flex-col md:flex-row">
+          <div className="grid gap-8 justify-center items-start md:max-w-xl md:inline-flex md:flex-col md:justify-center">
             <p className="text-green">Hi, my name is</p>
-            <h1 className="font-semibold text-5xl">Siphesihle Thomo</h1>
+            <h1 className="font-semibold text-5xl text-white">Siphesihle Thomo</h1>
             <h3 className="font-semibold text-4xl">Software Developer</h3>
             <p>Passionate software developer based in Johannesburg, South Africa.
             With expertise in building quality full-stack web applications.</p>
@@ -22,7 +22,7 @@ export default function Home() {
             >Contact</Link>
           </div>
 
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-row justify-center items-center md:flex-col">
             <svg className='m-5' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
             <svg className='m-5' width={31} height={30}><use xlinkHref="/appIcons.svg#linkedin"/></svg>
           </div>
