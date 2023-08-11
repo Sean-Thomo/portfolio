@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 :root {
   --mainColor: #141d2b;
@@ -11,24 +12,8 @@
 @media (prefers-color-scheme: dark) {
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  padding: 0 2rem;
-  background-color: var(--mainColor);
-  color:var(--textColor);
-}
-
-nav a{
-  margin: 0 2rem;
-  color: var(--textColor);
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: var(--secondaryColor);
+* {
+  font-family: 'Fira Code', monospace;
 }
 
 header nav span {
@@ -44,7 +29,7 @@ header .nav-btn {
   color: var(--textColor);
   visibility: hidden;
   opacity: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width:1024px) {
