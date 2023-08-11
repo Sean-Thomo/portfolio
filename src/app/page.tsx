@@ -1,10 +1,11 @@
-import Image from 'next/image'
+import React from "react"
+import Navbar from "@/components/navbar/Navbar"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="bg-red-400">
-        <h1>Hello World!</h1>
+    <main className="">
+      <div className="">
+        <Navbar />
       </div>
     </main>
   )
