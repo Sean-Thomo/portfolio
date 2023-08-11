@@ -9,7 +9,7 @@ export default function Home() {
         {/* Navbar */}
         <Navbar />
         {/* Intro Text */}
-        <div className="flex flex-col mt-">
+        <div className="min-h-screen place-content-center flex  flex-col ">
           <div className="grid gap-8 justify-center items-start">
             <p className="text-green">Hi, my name is</p>
             <h1 className="font-semibold text-5xl">Siphesihle Thomo</h1>
@@ -22,8 +22,9 @@ export default function Home() {
             >Contact</Link>
           </div>
 
-          <div className="flex flex-col">
-            github
+          <div className="flex flex-row justify-center items-center">
+            <svg className='m-5' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
+            <svg className='m-5' width={31} height={30}><use xlinkHref="/appIcons.svg#linkedin"/></svg>
           </div>
         </div>
 
