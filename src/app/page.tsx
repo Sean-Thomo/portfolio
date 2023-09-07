@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className=" text-slate-200 h-screen">
+    <main className="bg-mirage-950 text-slate-200 h-screen">
         <div className="bg-mirage-950 px-8 max-w-5xl justify-center items-center m-auto">
             {/* Navbar */}
             <Navbar />
