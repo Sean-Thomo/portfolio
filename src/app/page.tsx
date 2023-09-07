@@ -6,11 +6,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="bg-mirage-950 text-slate-200 h-screen">
-        <div className="bg-mirage-950 px-8 max-w-5xl justify-center items-center m-auto">
+        <div className="bg-mirage-950 px-8 pb-8 max-w-5xl justify-center items-center m-auto">
             {/* Navbar */}
             <Navbar />
             {/* Intro Text */}
-            <div className="h-[85vh] justify-center flex flex-col md:flex-row">
+            <div className="h-[85vh] py-4 justify-center flex flex-col md:flex-row">
                 <div className="grid gap-8 justify-center items-start md:max-w-xl md:inline-flex md:flex-col">
                     <p className="text-lime-500">Hi, my name is</p>
                     <h1 className="font-semibold text-5xl text-white">Siphesihle Thomo</h1>
@@ -19,17 +19,17 @@ export default function Home() {
                     With expertise in building quality full-stack web applications.</p>
 
                     <Link href="/#contact" className="flex gap-3 bg-lime-500 w-36 h-14 
-                    p-2.5 items-center justify-center rounded-3xl text-black font-semibold
-                    hover:bg-lime-600"
+                    p-2.5 items-center justify-center rounded-3xl text-mirage-950 text-xl font-bold transition
+                    duration-150 ease-in-out hover:bg-lime-600 hover:scale-110"
                     >Contact</Link>
                 </div>
 
-                <div className="flex flex-row justify-center items-center md:flex-col md:place-items-start">
-                    <Link href="">
-                        <svg className='m-5 hover:text-lime-600' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>                    
+                <div className="mt-8 flex flex-row justify-center items-center md:flex-col md:place-items-start md:mt-0">
+                    <Link href="" className='m-5'>
+                        <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={30} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>                    
                     </Link>
-                    <Link href="">
-                        <svg className='m-5 hover:text-lime-600' width={31} height={30}><use xlinkHref="/appIcons.svg#linkedin"/></svg>                    
+                    <Link href="" className='m-5'>
+                        <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={30} height={30}><use xlinkHref="/appIcons.svg#linkedin"/></svg>                    
                     </Link>
                 </div>
             </div>
@@ -103,18 +103,56 @@ export default function Home() {
             {/* Projects */}
             <div className="grid gap-4 justify-center items-center sm:grid-cols-3 sm:mx-10">
                 <hr className="h-1 max-w-[538px] border-0 rounded bg-lime-500 col-span-2"/>
-                <h2><span className="text-lime-500">02. </span>Projects</h2>
+                <h2 className="flex justify-end" ><span className="text-lime-500">02. </span>Projects</h2>
             </div>
 
             <div className="flex justify-center items-center my-16">
-                <Link href="#" className="group block max-w-xs mx-auto rounded-lg p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-mirage-700 hover:ring-mirage-600">
-                    <div className="flex items-center space-x-3">
-                    <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#folder"/></svg>
-                        <h3 className="text-slate-200 group-hover:text-white text-sm font-semibold">New project</h3>
+                <div className="max-w-xs mx-auto rounded-lg p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3
+                    transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
+                    hover:-translate-y-1">
+                    <div className="flex items-center">
+                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
+
+                        <Link href="" className='m-5'>
+                            <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
+                        </Link>
+                        <Link href="" className='m-5'>
+                            <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
+                        </Link>
                     </div>
-                    <p className="text-slate-200 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
-                </Link>
+
+                    <p className="text-slate-200 group-hover:text-white text-sm">A simple calculator app.</p>
+                </div>
             </div>
+
+            {/* Contact */}
+            <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <form className="space-y-6" action="#">
+                    <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
+                    <div>
+                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                        <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required/>
+                    </div>
+                    <div>
+                        <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+                        <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required/>
+                    </div>
+                    <div className="flex items-start">
+                        <div className="flex items-start">
+                            <div className="flex items-center h-5">
+                                <input id="remember" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required/>
+                            </div>
+                            <label htmlFor="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                        </div>
+                        <a href="#" className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+                    </div>
+                    <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
+                    <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
+                        Not registered? <a href="#" className="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+                    </div>
+                </form>
+            </div>
+
 
         </div>
     </main>

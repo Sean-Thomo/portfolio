@@ -24,12 +24,12 @@ export default function Navbar() {
                 <a href="/#about" className="hover:text-lime-600 mx-8"><span>02.</span> About</a>
                 <a href="/#projects" className="hover:text-lime-600 mx-8"><span>03.</span> Projects</a>
                 <a href="/#contact" className="hover:text-lime-600 mx-8"><span>04.</span> Contact</a>
-                <button className={`nav-btn nav-close-btn md:hidden ${isRotated ? 'transition ease-in-out delay-150 rotate-[360deg]' : 'rotate-0'}`} onClick={() => {showNavbar(); toggleRotation();}}>
-                    <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#nav-arrow-up"/></svg>
+                <button className={`m-5 nav-btn nav-close-btn md:hidden ${isRotated ? 'transition ease-in-out delay-150 rotate-[360deg]' : 'rotate-0'}`} onClick={() => {showNavbar(); toggleRotation();}}>
+                    <svg className='text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#close-circle"/></svg>
                 </button>
             </nav>
-            <button className={`nav-btn nav-open-btn md:hidden ${isRotated ? 'transition ease-in-out delay-150 rotate-[360deg] hidden' : 'rotate-0'}`} onClick={() => {showNavbar(); toggleRotation();}}>
-                <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#nav-arrow-down"/></svg>
+            <button className={`m-5 nav-btn nav-open-btn md:hidden ${isRotated ? 'transition ease-in-out delay-150 rotate-[360deg] hidden' : 'rotate-0'}`} onClick={() => {showNavbar(); toggleRotation();}}>
+                <svg className='text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#bars"/></svg>
             </button>
         </header>
     )
