@@ -25,8 +25,12 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-row justify-center items-center md:flex-col md:place-items-start">
-                    <svg className='m-5 hover:text-lime-600' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
-                    <svg className='m-5 hover:text-lime-600' width={31} height={30}><use xlinkHref="/appIcons.svg#linkedin"/></svg>
+                    <Link href="">
+                        <svg className='m-5 hover:text-lime-600' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>                    
+                    </Link>
+                    <Link href="">
+                        <svg className='m-5 hover:text-lime-600' width={31} height={30}><use xlinkHref="/appIcons.svg#linkedin"/></svg>                    
+                    </Link>
                 </div>
             </div>
 
