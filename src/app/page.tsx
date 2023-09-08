@@ -106,50 +106,117 @@ export default function Home() {
                 <h2 className="flex justify-end" ><span className="text-lime-500">02. </span>Projects</h2>
             </div>
 
-            <div className="flex justify-center items-center my-16">
+            <div className="flex flex-col justify-center items-center my-16">
                 <div className="max-w-xs mx-auto rounded-lg p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3
                     transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
                     hover:-translate-y-1">
-                    <div className="flex items-center">
+                    <div className="flex justify-between items-center">
                         <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
 
-                        <Link href="" className='m-5'>
-                            <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
-                        </Link>
-                        <Link href="" className='m-5'>
-                            <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
-                        </Link>
+                        <div className="flex">
+                            <Link href="" className='m-5'>
+                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
+                            </Link>
+                            <Link href="" className='m-5'>
+                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
+                            </Link>
+                        </div>
                     </div>
 
-                    <p className="text-slate-200 group-hover:text-white text-sm">A simple calculator app.</p>
+                    <p className="text-slate-200 group-hover:text-white text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus nobis, minima quia, 
+                        nostrum, perspiciatis beatae veniam natus fugiat vel quisquam doloremque quidem cupiditate nulla. 
+                        Voluptates voluptatem ad odio reiciendis!
+                    </p>
+
+                    <div className="flex text-sm text-lime-600">
+                        <p className="m-2">HTML/CSS</p>
+                        <p className="m-2">JavaScript</p>
+                        <p className="m-2">JavaScript</p>
+                    </div>
+                </div>
+
+                <div className="max-w-xs mx-auto mt-6 rounded-lg p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3
+                    transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
+                    hover:-translate-y-1">
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
+
+                        <div className="flex">
+                            <Link href="" className='m-5'>
+                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
+                            </Link>
+                            <Link href="" className='m-5'>
+                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
+                            </Link>
+                        </div>
+                    </div>
+
+                    <p className="text-slate-200 group-hover:text-white text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus nobis, minima quia, 
+                        nostrum, perspiciatis beatae veniam natus fugiat vel quisquam doloremque quidem cupiditate nulla. 
+                        Voluptates voluptatem ad odio reiciendis!
+                    </p>
+
+                    <div className="flex text-sm text-lime-600">
+                        <p className="m-2">HTML/CSS</p>
+                        <p className="m-2">JavaScript</p>
+                        <p className="m-2">JavaScript</p>
+                    </div>
+                </div>
+
+                <div className="max-w-xs mx-auto mt-6 rounded-lg p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3
+                    transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
+                    hover:-translate-y-1">
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
+
+                        <div className="flex">
+                            <Link href="" className='m-5'>
+                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
+                            </Link>
+                            <Link href="" className='m-5'>
+                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
+                            </Link>
+                        </div>
+                    </div>
+
+                    <p className="text-slate-200 group-hover:text-white text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus nobis, minima quia, 
+                        nostrum, perspiciatis beatae veniam natus fugiat vel quisquam doloremque quidem cupiditate nulla. 
+                        Voluptates voluptatem ad odio reiciendis!
+                    </p>
+
+                    <div className="flex text-sm text-lime-600">
+                        <p className="m-2">HTML/CSS</p>
+                        <p className="m-2">JavaScript</p>
+                        <p className="m-2">JavaScript</p>
+                    </div>
                 </div>
             </div>
 
             {/* Contact */}
-            <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div className="w-full max-w-sm p-4 bg-white rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                 <form className="space-y-6" action="#">
-                    <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
+                    <h5 className="text-xl font-medium text-gray-900 dark:text-white">Lets Chat!</h5>
                     <div>
-                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                        <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required/>
+                        <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
+                        <input type="name" name="name" id="name" className="bg-gray-50 border border-gray-300 
+                        text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block 
+                        w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 
+                        dark:text-white" placeholder="John Doe" required/>
                     </div>
                     <div>
-                        <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
-                        <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required/>
+                        <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Message</label>
+                        <textarea name="message" id="message" placeholder="Message..." className="bg-gray-50 border 
+                        border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
+                        block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 
+                        dark:text-white" required/>
                     </div>
-                    <div className="flex items-start">
-                        <div className="flex items-start">
-                            <div className="flex items-center h-5">
-                                <input id="remember" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required/>
-                            </div>
-                            <label htmlFor="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
-                        </div>
-                        <a href="#" className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
-                    </div>
-                    <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
-                    <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-                        Not registered? <a href="#" className="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
-                    </div>
+
+                    <button type="submit" className="w-full text-white bg-lime-600 hover:bg-lime-800 focus:ring-4 
+                    focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Send</button>
+
                 </form>
             </div>
 

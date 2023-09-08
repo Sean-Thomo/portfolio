@@ -32,6 +32,12 @@ header .nav-btn {
   font-size: 1.5rem;
 }
 
+h3 {
+  color: #a4b1cd;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
 @media only screen and (max-width:768px) {
   header .nav-btn {
     visibility: visible;
