@@ -201,7 +201,7 @@ export default function Home() {
                 <hr className="h-1 max-w-[538px] border-0 rounded bg-lime-500 col-span-2"/>
             </div>
 
-            <div id="contact" className="w-full text-center p-4 mt-8 bg-white rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div id="contact" className="flex m-auto w-96 text-center p-4 mt-8 bg-white rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                 <form className="space-y-6 items-center" action="#">
                     <h5 className="text-xl font-medium text-gray-900 dark:text-white">Lets Chat!</h5>
                     <div className="items-center">
