@@ -25,10 +25,10 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8 flex flex-row justify-center items-center md:flex-col md:place-items-start md:mt-0">
-                    <Link href="" className="m-5">
+                    <Link href="https://www.linkedin.com/in/siphesihle-thomo/" className="m-5">
                         <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={30} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>                    
                     </Link>
-                    <Link href="" className="m-5">
+                    <Link href="https://github.com/Sean-Thomo" className="m-5">
                         <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={30} height={30}><use xlinkHref="/appIcons.svg#linkedin"/></svg>                    
                     </Link>
                 </div>
@@ -59,9 +59,7 @@ export default function Home() {
                     <div className="grid grid-cols-2">
                     <ul>
                         <li className="flex items-center">
-                            {/* <span> */}
                             <svg className="m-5 text-lime-500" width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
-                            {/* </span> */}
                             TypeScript
                         </li>
                         <li className="flex items-center">
@@ -111,7 +109,7 @@ export default function Home() {
                     transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
                     hover:-translate-y-1">
                     <div className="flex justify-between items-center">
-                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
+                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Coming Soon</h1>
 
                         <div className="flex">
                             <Link href="" className="m-5">
@@ -140,7 +138,7 @@ export default function Home() {
                     transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
                     hover:-translate-y-1">
                     <div className="flex justify-between items-center">
-                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
+                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Coming Soon</h1>
 
                         <div className="flex">
                             <Link href="" className="m-5">
@@ -169,7 +167,7 @@ export default function Home() {
                     transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
                     hover:-translate-y-1">
                     <div className="flex justify-between items-center">
-                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
+                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Coming Soon</h1>
 
                         <div className="flex">
                             <Link href="" className="m-5">
