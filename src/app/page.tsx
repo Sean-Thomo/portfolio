@@ -25,11 +25,11 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8 flex flex-row justify-center items-center md:flex-col md:place-items-start md:mt-0">
-                    <Link href="" className='m-5'>
-                        <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={30} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>                    
+                    <Link href="" className="m-5">
+                        <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={30} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>                    
                     </Link>
-                    <Link href="" className='m-5'>
-                        <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={30} height={30}><use xlinkHref="/appIcons.svg#linkedin"/></svg>                    
+                    <Link href="" className="m-5">
+                        <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={30} height={30}><use xlinkHref="/appIcons.svg#linkedin"/></svg>                    
                     </Link>
                 </div>
             </div>
@@ -60,38 +60,38 @@ export default function Home() {
                     <ul>
                         <li className="flex items-center">
                             {/* <span> */}
-                            <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
+                            <svg className="m-5 text-lime-500" width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
                             {/* </span> */}
                             TypeScript
                         </li>
                         <li className="flex items-center">
-                            <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
+                            <svg className="m-5 text-lime-500" width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
                             JavaScript
                         </li>
                         <li className="flex items-center">
-                            <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
+                            <svg className="m-5 text-lime-500" width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
                             Java
                         </li>
                         <li className="flex items-center">
-                            <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
+                            <svg className="m-5 text-lime-500" width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
                             Python
                         </li>
                     </ul>
                     <ul>
                         <li className="flex items-center">
-                            <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
+                            <svg className="m-5 text-lime-500" width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
                             React.js / Next.js
                         </li>
                         <li className="flex items-center">
-                            <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
+                            <svg className="m-5 text-lime-500" width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
                             Tailwind CSS
                         </li>
                         <li className="flex items-center">
-                            <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
+                            <svg className="m-5 text-lime-500" width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
                             SQL
                         </li>
                         <li className="flex items-center">
-                            <svg className='m-5 text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
+                            <svg className="m-5 text-lime-500" width={24} height={24}><use xlinkHref="/appIcons.svg#arrow"/></svg>
                             Node.js
                         </li>
                     </ul>
@@ -114,40 +114,11 @@ export default function Home() {
                         <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
 
                         <div className="flex">
-                            <Link href="" className='m-5'>
-                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
+                            <Link href="" className="m-5">
+                                <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
                             </Link>
-                            <Link href="" className='m-5'>
-                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
-                            </Link>
-                        </div>
-                    </div>
-
-                    <p className="text-slate-200 group-hover:text-white text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus nobis, minima quia, 
-                        nostrum, perspiciatis beatae veniam natus fugiat vel quisquam doloremque quidem cupiditate nulla. 
-                        Voluptates voluptatem ad odio reiciendis!
-                    </p>
-
-                    <div className="flex text-sm text-lime-600">
-                        <p className="m-2">HTML/CSS</p>
-                        <p className="m-2">JavaScript</p>
-                        <p className="m-2">JavaScript</p>
-                    </div>
-                </div>
-
-                <div className="max-w-xs mx-auto rounded-lg p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3
-                    transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
-                    hover:-translate-y-1">
-                    <div className="flex justify-between items-center">
-                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
-
-                        <div className="flex">
-                            <Link href="" className='m-5'>
-                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
-                            </Link>
-                            <Link href="" className='m-5'>
-                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
+                            <Link href="" className="m-5">
+                                <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
                             </Link>
                         </div>
                     </div>
@@ -172,11 +143,40 @@ export default function Home() {
                         <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
 
                         <div className="flex">
-                            <Link href="" className='m-5'>
-                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
+                            <Link href="" className="m-5">
+                                <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
                             </Link>
-                            <Link href="" className='m-5'>
-                                <svg className='transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150' width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
+                            <Link href="" className="m-5">
+                                <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
+                            </Link>
+                        </div>
+                    </div>
+
+                    <p className="text-slate-200 group-hover:text-white text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus nobis, minima quia, 
+                        nostrum, perspiciatis beatae veniam natus fugiat vel quisquam doloremque quidem cupiditate nulla. 
+                        Voluptates voluptatem ad odio reiciendis!
+                    </p>
+
+                    <div className="flex text-sm text-lime-600">
+                        <p className="m-2">HTML/CSS</p>
+                        <p className="m-2">JavaScript</p>
+                        <p className="m-2">JavaScript</p>
+                    </div>
+                </div>
+
+                <div className="max-w-xs mx-auto rounded-lg p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3
+                    transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
+                    hover:-translate-y-1">
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Calculator App</h1>
+
+                        <div className="flex">
+                            <Link href="" className="m-5">
+                                <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={24} height={24}><use xlinkHref="/appIcons.svg#external-link"/></svg>
+                            </Link>
+                            <Link href="" className="m-5">
+                                <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={31} height={30}><use xlinkHref="/appIcons.svg#github"/></svg>
                             </Link>
                         </div>
                     </div>
