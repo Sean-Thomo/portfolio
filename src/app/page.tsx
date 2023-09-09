@@ -35,8 +35,8 @@ export default function Home() {
             </div>
 
             {/* About Me */}
-            <div className="grid gap-4 justify-center items-center sm:grid-cols-3 sm:mx-10">
-                <h2 id="about"><span className="text-lime-500">02. </span>About Me</h2>
+            <div id="about" className="grid gap-4 justify-center items-center sm:grid-cols-3 sm:mx-10">
+                <h2><span className="text-lime-500">02. </span>About Me</h2>
                 <hr className="h-1 max-w-[538px] border-0 rounded bg-lime-500 col-span-2"/>
             </div>
 
@@ -99,9 +99,9 @@ export default function Home() {
             </div>
 
             {/* Projects */}
-            <div className="grid gap-4 justify-center items-center sm:grid-cols-3 sm:mx-10">
+            <div id="projects" className="grid gap-4 justify-center items-center sm:grid-cols-3 sm:mx-10">
                 <hr className="h-1 max-w-[538px] border-0 rounded bg-lime-500 col-span-2"/>
-                <h2 id="projects" className="flex justify-end" ><span className="text-lime-500">02. </span>Projects</h2>
+                <h2 className="flex justify-end" ><span className="text-lime-500">02. </span>Projects</h2>
             </div>
 
             <div className="grid gap-6 justify-center items-center my-16 sm:grid-cols-2 lg:grid-cols-3">
@@ -194,12 +194,12 @@ export default function Home() {
             </div>
 
             {/* Contact */}
-            <div className="grid gap-4 justify-center items-center sm:grid-cols-3 sm:mx-10">
+            <div id="contact" className="grid gap-4 justify-center items-center sm:grid-cols-3 sm:mx-10">
                 <h2><span className="text-lime-500">04. </span>Contact</h2>
                 <hr className="h-1 max-w-[538px] border-0 rounded bg-lime-500 col-span-2"/>
             </div>
 
-            <div id="contact" className="flex m-auto w-96 text-center p-4 mt-8 bg-white rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div className="flex m-auto w-96 text-center p-4 mt-8 bg-white rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                 <form className="space-y-6 items-center" action="#">
                     <h5 className="text-xl font-medium text-gray-900 dark:text-white">Lets Chat!</h5>
                     <div className="items-center">

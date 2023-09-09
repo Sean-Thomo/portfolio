@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return (
         <header className="top-0 sticky flex items-center justify-between h-16 bg-mirage-950">
-            <h1>Thomo.dev</h1>
+            <a href="/" className="text-lime-600 text-3xl font-black"> &lt;Thomo/&gt; </a>
             <nav ref={navRef}>
                 <a href="/" className="hover:text-lime-600 mx-8"><span>01.</span> Home</a>
                 <a href="/#about" className="hover:text-lime-600 mx-8"><span>02.</span> About</a>
