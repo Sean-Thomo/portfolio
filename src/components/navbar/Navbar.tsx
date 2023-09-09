@@ -3,7 +3,7 @@
 import { useRef, useState } from "react"
 
 export default function Navbar() {
-    const navRef = useRef();
+    const navRef = useRef<HTMLDivElement>(null);
 
     const showNavbar = () => {
         if (navRef.current) {
