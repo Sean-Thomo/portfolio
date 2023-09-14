@@ -17,10 +17,10 @@ export default function Navbar() {
                 <svg className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150" width={103} height={55}><use xlinkHref="/appIcons.svg#logo"/></svg>                    
             </a>
             <nav ref={navRef}>
-                <a href="/" className="hover:text-lime-600 mx-8"><span>01.</span> Home</a>
-                <a href="/#about" className="hover:text-lime-600 mx-8"><span>02.</span> About</a>
-                <a href="/#projects" className="hover:text-lime-600 mx-8"><span>03.</span> Projects</a>
-                <a href="/#contact" className="hover:text-lime-600 mx-8"><span>04.</span> Contact</a>
+                <a href="/" className="hover:text-lime-600 mx-8"><span>00.</span> Home</a>
+                <a href="/#about" className="hover:text-lime-600 mx-8"><span>01.</span> About</a>
+                <a href="/#projects" className="hover:text-lime-600 mx-8"><span>02.</span> Projects</a>
+                <a href="/#contact" className="hover:text-lime-600 mx-8"><span>03.</span> Contact</a>
                 <button className="m-5 nav-btn nav-close-btn md:hidden"  onClick={showNavbar}>
                     <svg className='text-lime-500' width={24} height={24}><use xlinkHref="/appIcons.svg#close-circle"/></svg>
                 </button>
