@@ -18,11 +18,11 @@ export default function Home() {
                     <p>Passionate software developer based in Johannesburg, South Africa.
                     With expertise in building quality full-stack web applications.</p>
 
-                    <Link href="/#contact" className="w-32 text-lime-600 hover:text-white border border-lime-600
+                    <a className="text-lime-600 hover:text-white border border-lime-600
                     focus:ring-4 focus:outline-none focus:ring-lime-300
-                    font-medium rounded-sm text-sm px-5 py-2.5 text-center mr-2 mb-2 transition
+                    font-medium rounded-sm text-sm px-5 py-2.5 text-center mr-2 mb-2 mt-12 transition
                     duration-150 ease-in-out hover:bg-lime-600 hover:scale-110"
-                    >Contact</Link>
+                    href="mailto:seansthomo@gmail.com">Contact</a>
                 </div>
 
                 <div className="mt-8 flex flex-row justify-center items-center md:flex-col md:place-items-start md:mt-0">
