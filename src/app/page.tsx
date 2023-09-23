@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-mirage-950 text-slate-200 h-full">
-        <div className="bg-mirage-950 px-8 pb-8 max-w-5xl justify-center items-center m-auto">
+    <main className="bg-[#0C121B] text-slate-200 h-full">
+        <div className="bg-[#0C121B] px-8 pb-8 max-w-5xl justify-center items-center m-auto">
             {/* Navbar */}
             <Navbar />
             {/* Intro Text */}
@@ -18,9 +18,9 @@ export default function Home() {
                     <p>Passionate software developer based in Johannesburg, South Africa.
                     With expertise in building quality full-stack web applications.</p>
 
-                    <a className="text-lime-600 hover:text-white border border-lime-600
+                    <a className="text-lime-600 w-32 border hover:text-white border-lime-600
                     focus:ring-4 focus:outline-none focus:ring-lime-300
-                    font-medium rounded-sm text-sm px-5 py-2.5 text-center mr-2 mb-2 mt-12 transition
+                    font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 mt-12 transition
                     duration-150 ease-in-out hover:bg-lime-600 hover:scale-110"
                     href="mailto:seansthomo@gmail.com">Contact</a>
                 </div>
@@ -106,8 +106,8 @@ export default function Home() {
             </div>
 
             <div className="grid gap-6 justify-center items-center my-16 sm:grid-cols-2 lg:grid-cols-3">
-                <div className="max-w-xs mx-auto rounded-sm p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3
-                    transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
+                <div className="max-w-xs mx-auto rounded-xl p-6 bg-mirage-950 ring-1 ring-slate-950/5 shadow-lg space-y-3
+                    transition duration-150 ease-in-out hover:bg-mirage-900 hover:ring-mirage-700 hover:scale-110 
                     hover:-translate-y-1">
                     <div className="flex justify-between items-center">
                         <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Coming Soon</h1>
@@ -135,8 +135,8 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="max-w-xs mx-auto rounded-sm p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3
-                    transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
+                <div className="max-w-xs mx-auto rounded-xl p-6 bg-mirage-950 ring-1 ring-slate-950/5 shadow-lg space-y-3
+                    transition duration-150 ease-in-out hover:bg-mirage-900 hover:ring-mirage-700 hover:scale-110 
                     hover:-translate-y-1">
                     <div className="flex justify-between items-center">
                         <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Coming Soon</h1>
@@ -164,8 +164,8 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="max-w-xs mx-auto rounded-sm p-6 bg-mirage-900 ring-1 ring-slate-900/5 shadow-lg space-y-3
-                    transition duration-150 ease-in-out hover:bg-mirage-700 hover:ring-mirage-600 hover:scale-110 
+                <div className="max-w-xs mx-auto rounded-xl p-6 bg-mirage-950 ring-1 ring-slate-950/5 shadow-lg space-y-3
+                    transition duration-150 ease-in-out hover:bg-mirage-900 hover:ring-mirage-700 hover:scale-110 
                     hover:-translate-y-1">
                     <div className="flex justify-between items-center">
                         <h1 className="text-slate-200 group-hover:text-white text-sm font-semibold">Coming Soon</h1>
@@ -205,7 +205,7 @@ export default function Home() {
                     <h2 className="m-6 text-center font-semibold text-2xl">Let&rsquo;s  Build Something Together!</h2>
                     <a className="text-lime-600 hover:text-white border border-lime-600
                     focus:ring-4 focus:outline-none focus:ring-lime-300
-                    font-medium rounded-sm text-sm px-5 py-2.5 text-center mr-2 mb-2 mt-12 transition
+                    font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 mt-12 transition
                     duration-150 ease-in-out hover:bg-lime-600 hover:scale-110"
                     href="mailto:seansthomo@gmail.com">Say Hi 👋</a>
                 </div>
