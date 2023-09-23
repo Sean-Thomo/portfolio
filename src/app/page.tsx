@@ -60,37 +60,37 @@ export default function Home() {
                     <div className="grid grid-cols-2">
                     <ul>
                         <li className="flex items-center">
-                            <span className="m-5 text-lime-500"> &gt; </span>
+                            <span className="m-2 text-lime-500"> &gt; </span>
                             TypeScript
                         </li>
                         <li className="flex items-center">
-                            <span className="m-5 text-lime-500"> &gt; </span>
+                            <span className="m-2 text-lime-500"> &gt; </span>
                             JavaScript
                         </li>
                         <li className="flex items-center">
-                            <span className="m-5 text-lime-500"> &gt; </span>
+                            <span className="m-2 text-lime-500"> &gt; </span>
                             Java
                         </li>
                         <li className="flex items-center">
-                            <span className="m-5 text-lime-500"> &gt; </span>
+                            <span className="m-2 text-lime-500"> &gt; </span>
                             Python
                         </li>
                     </ul>
                     <ul>
                         <li className="flex items-center">
-                            <span className="m-5 text-lime-500"> &gt; </span>
+                            <span className="m-2 text-lime-500"> &gt; </span>
                             React.js / Next.js
                         </li>
                         <li className="flex items-center">
-                            <span className="m-5 text-lime-500"> &gt; </span>
+                            <span className="m-2 text-lime-500"> &gt; </span>
                             Tailwind CSS
                         </li>
                         <li className="flex items-center">
-                            <span className="m-5 text-lime-500"> &gt; </span>
+                            <span className="m-2 text-lime-500"> &gt; </span>
                             SQL
                         </li>
                         <li className="flex items-center">
-                            <span className="m-5 text-lime-500"> &gt; </span>
+                            <span className="m-2 text-lime-500"> &gt; </span>
                             Node.js
                         </li>
                     </ul>
