@@ -38,6 +38,27 @@ h3 {
   -webkit-text-stroke-width: 1px;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--mainColor);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondaryColor);
+    border-radius: 16px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
 @media only screen and (max-width:768px) {
   header .nav-btn {
     visibility: visible;
