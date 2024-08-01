@@ -23,16 +23,28 @@ export default function Navbar() {
 				</svg>
 			</a>
 			<nav ref={navRef}>
-				<a href="/" className="hover:text-lime-600 mx-8">
+				<a href="/" className="hover:text-lime-600 mx-8" onClick={showNavbar}>
 					<span>00.</span> Home
 				</a>
-				<a href="/#about" className="hover:text-lime-600 mx-8">
+				<a
+					href="/#about"
+					className="hover:text-lime-600 mx-8"
+					onClick={showNavbar}
+				>
 					<span>01.</span> About
 				</a>
-				<a href="/#projects" className="hover:text-lime-600 mx-8">
+				<a
+					href="/#projects"
+					className="hover:text-lime-600 mx-8"
+					onClick={showNavbar}
+				>
 					<span>02.</span> Projects
 				</a>
-				<a href="/#contact" className="hover:text-lime-600 mx-8">
+				<a
+					href="/#contact"
+					className="hover:text-lime-600 mx-8"
+					onClick={showNavbar}
+				>
 					<span>03.</span> Contact
 				</a>
 				<button
