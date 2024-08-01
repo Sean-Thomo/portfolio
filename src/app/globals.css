@@ -82,7 +82,7 @@ h3 {
 	}
 
 	header .responsive-nav {
-		transform: translateY(100vh);
+		transform: none;
 	}
 
 	nav .nav-close-btn {
