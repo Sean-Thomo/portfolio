@@ -3,26 +3,28 @@ import Image from "next/image";
 
 export default function About() {
 	return (
-		<section className="bg-[#0C121B] text-slate-200">
-			<div
-				id="about"
-				className="grid gap-4 justify-center items-center bg-[#0C121B] text-slate-200 sm:grid-cols-3 sm:mx-10"
-			>
-				<h2>
-					<span className="text-lime-500">02. </span>About Me
-				</h2>
-				<hr className="h-1 max-w-lg border-0 rounded bg-lime-500 col-span-2" />
+		<section className="bg-[#0C121B] text-slate-200 px-4">
+			<div className="flex justify-center">
+				<div
+					id="about"
+					className="grid gap-4 justify-center items-center mx-10 sm:grid-cols-3 md:w-[1024px]"
+				>
+					<h2 className="flex justify-start">
+						<span className="text-lime-500">01. </span>About Me
+					</h2>
+					<hr className="h-1 border-0 rounded bg-lime-500 col-span-2" />
+				</div>
 			</div>
 
-			<div className="grid justify-center items-center py-16 gap-16 md:grid-cols-3">
+			<div className="flex flex-col justify-center items-center py-16 lg:flex-row gap-12">
 				<Image
-					className="mx-auto rounded-full"
+					className="pb-4 rounded-full"
 					width={300}
 					height={300}
 					src="/images/profile-pic.svg"
 					alt="Siphesihle Thomo"
 				/>
-				<div className="md:col-span-2">
+				<div className="md:w-2/3 md:max-w-3xl">
 					<p>
 						As a Junior Software Developer, I possess an impressive arsenal of
 						skills in Java, Python, JavaScript, React/Next, Tailwind and Git. I
@@ -76,6 +78,7 @@ export default function About() {
 					</div>
 				</div>
 			</div>
+			{/* </div> */}
 		</section>
 	);
 }
