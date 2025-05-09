@@ -1,6 +1,5 @@
 "use client";
-
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 export default function Navbar() {
 	const navRef = useRef<HTMLDivElement>(null);
@@ -12,10 +11,14 @@ export default function Navbar() {
 	};
 
 	return (
-		<header className="top-0 sticky flex items-center justify-between h-16 bg-[#0C121B]">
+		<header
+			className="top-0 sticky flex items-center justify-between h-16 bg-[#0C121B] 
+    text-slate-200 z-40 w-full"
+		>
 			<a href="/" className="text-lime-600 text-3xl font-black">
 				<svg
-					className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 duration-150"
+					className="transition ease-in-out text-slate-200 hover:text-lime-600 hover:scale-110 
+          duration-150"
 					width={103}
 					height={55}
 				>
