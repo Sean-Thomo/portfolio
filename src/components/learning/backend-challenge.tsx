@@ -259,23 +259,23 @@ export default function BackendDevGame() {
 			<div className="flex flex-col items-center justify-center pt-24">
 				<div className="text-center">
 					<Trophy className="w-24 h-24 text-lime-500 mx-auto mb-6" />
-					<h1 className="text-4xl font-bold mb-4 text-lime-500">
+					<h1 className="text-2xl font-bold mb-4 text-lime-500 sm:text-4xl">
 						Congratulations!
 					</h1>
-					<p className="text-xl mb-6 ">
+					<p className="text-lg mb-6 sm:text-xl">
 						You&apos;ve mastered Backend Development fundamentals!
 					</p>
-					<div className="bg-slate-500/10 rounded-lg p-6 mb-6">
-						<p className="text-2xl font-bold text-lime-500">
+					<div className="bg-slate-500/10 rounded-lg p-6 mb-6 mx-4 sm:mx-0">
+						<p className="font-bold text-lime-500 mb-2 sm:text-2xl">
 							Final Score: {score.toLocaleString()}
 						</p>
-						<p className="text-lg mt-2 ">
+						<p className="text-sm sm:text-lg mt-2 ">
 							You&apos;ve completed all {levels.length} levels!
 						</p>
 					</div>
 					<button
 						onClick={resetGame}
-						className="bg-lime-500 hover:bg-lime-500/90 text-slate-950 px-8 py-3 rounded-lg font-semibold text-lg transition-colors"
+						className="bg-lime-500 hover:bg-lime-500/90 text-slate-950 mx-4 px-8 py-3 rounded-lg font-semibold text-lg transition-colors sm:mx-0"
 					>
 						Play Again
 					</button>
@@ -339,16 +339,18 @@ export default function BackendDevGame() {
 			<div className="flex flex-col items-center justify-center pt-24">
 				<div className="text-center">
 					<CheckCircle className="w-16 h-16 text-lime-500 mx-auto mb-6" />
-					<h2 className="text-3xl font-bold mb-4 ">Level Complete!</h2>
-					<p className="text-xl mb-6 ">
+					<h2 className="text-2xl font-bold mb-4 sm:text-3xl">
+						Level Complete!
+					</h2>
+					<p className="text-lg mb-6 sm:text-xl">
 						Great work on {currentLevelData.name}!
 					</p>
 
-					<div className="bg-slate-500/10 rounded-lg p-6 mb-6">
-						<p className="text-2xl font-bold text-lime-500 mb-2">
+					<div className="bg-slate-500/10 rounded-lg p-6 mb-6 mx-4 sm:mx-0">
+						<p className="font-bold text-lime-500 mb-2 sm:text-2xl">
 							Current Score: {score.toLocaleString()}
 						</p>
-						<p className="text-lg ">
+						<p className="text-sm sm:text-lg">
 							Level {currentLevel} of {levels.length}
 						</p>
 					</div>
@@ -356,7 +358,7 @@ export default function BackendDevGame() {
 					{currentLevel < levels.length ? (
 						<button
 							onClick={nextLevel}
-							className="bg-lime-500 hover:bg-lime-500/90 text-slate-950 px-8 py-3 rounded-lg font-semibold text-lg transition-colors"
+							className="bg-lime-500 hover:bg-lime-500/90 text-slate-950 mx-4 px-8 py-3 rounded-lg font-semibold transition-colors sm:mx-0 sm:text-lg"
 						>
 							Continue to {levels[currentLevel].name}
 						</button>
@@ -376,15 +378,15 @@ export default function BackendDevGame() {
 	const question = currentLevelData.questions[currentQuestion];
 
 	return (
-		<div className="flex flex-col justify-center mx-12 pt-12">
+		<div className="flex flex-col justify-center mx-2 sm:mx-12 pt-12">
 			{/* Header */}
-			<div className="flex justify-between items-center mb-8">
-				<div className="flex items-center">
-					<div className="text-lime-500 p-2 rounded-lg mr-3">
+			<div className="flex justify-between items-center mb-4 sm:mb-8">
+				<div className="flex mx-4 ">
+					<div className="text-lime-500 p-2 rounded-lg mr-3 hidden sm:block">
 						{currentLevelData.icon}
 					</div>
 					<div>
-						<h2 className="text-xl font-semibold text-lime-500">
+						<h2 className="font-semibold text-lime-500 sm:text-xl">
 							{currentLevelData.name}
 						</h2>
 						<p>
@@ -423,8 +425,8 @@ export default function BackendDevGame() {
 			</div>
 
 			{/* Question */}
-			<div className="bg-slate-500/10 rounded-lg p-6 mb-6">
-				<h3 className="text-xl font-semibold mb-6 ">{question.question}</h3>
+			<div className="bg-slate-500/10 rounded-lg p-4 mb-4 sm:p-6 sm:mb-6">
+				<h3 className="font-semibold mb-4 sm:text-xl">{question.question}</h3>
 
 				<div className="space-y-3">
 					{question.options.map((option, index) => (
