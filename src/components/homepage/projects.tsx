@@ -119,6 +119,43 @@ export default function Projects() {
 							<p className="pl-3">TypeScript</p>
 						</div>
 					</div>
+
+					<div
+						className="mx-auto rounded-xl p-6 bg-slate-500/10 shadow-lg space-y-3 transition
+				    duration-150 ease-in-out hover:bg-slate-500/20 hover:ring-lime-500/30 hover:-translate-y-1 group"
+					>
+						<div className="flex justify-between items-center">
+							<h1 className="text-lime-500 group-hover:text-lime-500/70 text-sm font-semibold">
+								Backend Developer Challenge
+							</h1>
+
+							<div className="flex">
+								<Link href="/learning" className="m-4">
+									<svg
+										className="transition ease-in-out text-lime-500 hover:text-lime-500/70
+                  hover:scale-110 duration-150"
+										width={24}
+										height={24}
+									>
+										<use xlinkHref="/appIcons.svg#external-link" />
+									</svg>
+								</Link>
+							</div>
+						</div>
+
+						<p className="group-hover:text-lime-500/70 text-sm">
+							Test your backend development skills across 4 key areas: API
+							Fundamentals, Database Design, System Architecture, and Debugging
+							& Performance. Answer questions quickly for bonus points and learn
+							from detailed explanations.
+						</p>
+
+						<div className="flex text-sm text-lime-500">
+							<p className="pr-3 border-r-2">React</p>
+							<p className="pr-3 pl-3 border-r-2">TypeScript</p>
+							<p className="pl-3">TailwindCSS</p>
+						</div>
+					</div>
 				</div>
 			</section>
 		</section>
