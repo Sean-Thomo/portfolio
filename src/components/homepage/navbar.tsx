@@ -12,10 +12,7 @@ export default function Navbar() {
 
 	return (
 		<section className="sm:flex sm:justify-center">
-			<header
-				className="sticky flex items-center justify-between h-16 z-40 
-      sm:w-[1000px]"
-			>
+			<header className="sticky flex items-center justify-between h-20 z-40 sm:w-[1000px]">
 				<a href="/" className="text-lime-500 text-3xl font-black">
 					<svg
 						className="transition ease-in-out text-lime-500 hover:text-lime-500/70 hover:scale-110 
