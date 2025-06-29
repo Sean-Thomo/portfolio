@@ -7,6 +7,10 @@
 	--mainColor: #0c121b;
 	--secondaryColor: #9fef00;
 	--textColor: #a4b1cd;
+	--textLight: #ffffff;
+	--textMuted: #8b9bb3;
+	--primaryLight: #141d2b;
+	--primaryDark: #0a0f16;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,7 +37,7 @@ header .nav-btn {
 }
 
 h3 {
-	color: #a4b1cd;
+	color: var(--textColor);
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 1px;
 }
@@ -59,7 +63,7 @@ h3 {
 	background: transparent;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
@@ -89,9 +93,5 @@ h3 {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
-	}
-
-	nav a {
-		font-size: 1.5rem;
 	}
 }
