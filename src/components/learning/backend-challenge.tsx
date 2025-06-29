@@ -256,7 +256,7 @@ export default function BackendDevGame() {
 
 	if (gameComplete) {
 		return (
-			<div className="max-w-4xl mx-auto p-6 bg-slate-950 min-h-screen text-lime-500">
+			<div className="flex flex-col items-center justify-center pt-24">
 				<div className="text-center">
 					<Trophy className="w-24 h-24 text-lime-500 mx-auto mb-6" />
 					<h1 className="text-4xl font-bold mb-4 text-lime-500">
@@ -286,7 +286,7 @@ export default function BackendDevGame() {
 
 	if (!gameStarted) {
 		return (
-			<div className="mx-auto p-6">
+			<div className="flex flex-col items-center justify-center pt-12">
 				<div className="text-center mb-8">
 					<h1 className="text-4xl font-bold mb-4">
 						Backend Developer Challenge
@@ -315,30 +315,28 @@ export default function BackendDevGame() {
 					))}
 				</div>
 
-				<div className="text-center">
-					<div className="bg-slate-500/10 rounded-lg p-6 mb-6">
-						<h2 className="text-xl font-semibold mb-3 ">How to Play:</h2>
-						<ul className="text-left space-y-2">
-							<li>• Answer questions quickly for bonus points</li>
-							<li>• 30 seconds per question</li>
-							<li>• Progress through 4 backend engineering topics</li>
-							<li>• Learn from detailed explanations</li>
-						</ul>
-					</div>
-					<button
-						onClick={startGame}
-						className="bg-lime-500 hover:bg-lime-500/90 text-slate-950 px-8 py-4 rounded-lg font-semibold text-xl transition-colors"
-					>
-						Start Challenge
-					</button>
+				<div className="bg-slate-500/10 rounded-lg p-6 mb-6">
+					<h2 className="text-xl font-semibold mb-3">How to Play:</h2>
+					<ul className="text-left space-y-2">
+						<li>• Answer questions quickly for bonus points</li>
+						<li>• 30 seconds per question</li>
+						<li>• Progress through 4 backend engineering topics</li>
+						<li>• Learn from detailed explanations</li>
+					</ul>
 				</div>
+				<button
+					onClick={startGame}
+					className="bg-lime-500 hover:bg-lime-500/90 text-slate-950 px-8 py-4 rounded-lg font-semibold text-xl transition-colors"
+				>
+					Start Challenge
+				</button>
 			</div>
 		);
 	}
 
 	if (levelComplete) {
 		return (
-			<div className="max-w-4xl mx-auto p-6 bg-slate-950 min-h-screen ">
+			<div className="flex flex-col items-center justify-center pt-24">
 				<div className="text-center">
 					<CheckCircle className="w-16 h-16 text-lime-500 mx-auto mb-6" />
 					<h2 className="text-3xl font-bold mb-4 ">Level Complete!</h2>
@@ -378,7 +376,7 @@ export default function BackendDevGame() {
 	const question = currentLevelData.questions[currentQuestion];
 
 	return (
-		<div className="mx-auto p-6">
+		<div className="flex flex-col justify-center mx-12 pt-12">
 			{/* Header */}
 			<div className="flex justify-between items-center mb-8">
 				<div className="flex items-center">
@@ -389,7 +387,7 @@ export default function BackendDevGame() {
 						<h2 className="text-xl font-semibold text-lime-500">
 							{currentLevelData.name}
 						</h2>
-						<p className="text-lime-500/70">
+						<p>
 							Question {currentQuestion + 1} of{" "}
 							{currentLevelData.questions.length}
 						</p>
