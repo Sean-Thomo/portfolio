@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
 	return (
-		<section className="mx-10">
+		<section className="mx-4 sm:mx-10">
 			<div className="flex justify-center">
 				<div
 					id="about"

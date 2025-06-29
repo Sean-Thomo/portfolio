@@ -286,12 +286,12 @@ export default function BackendDevGame() {
 
 	if (!gameStarted) {
 		return (
-			<div className="flex flex-col items-center justify-center pt-12">
-				<div className="text-center mb-8">
-					<h1 className="text-4xl font-bold mb-4">
+			<div className="flex flex-col items-center justify-center p-4 sm:p-12">
+				<div className="text-left mb-8 sm:text-center">
+					<h1 className="text-2xl font-bold mb-4">
 						Backend Developer Challenge
 					</h1>
-					<p className="text-xl">
+					<p className="sm:text-xl">
 						Test your backend development skills across 4 key areas!
 					</p>
 				</div>

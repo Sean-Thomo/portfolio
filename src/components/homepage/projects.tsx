@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Projects() {
 	return (
-		<section className="mx-10">
+		<section className="mx-4 sm:mx-10">
 			<div className="flex justify-center">
 				<div
 					id="projects"
@@ -17,9 +17,9 @@ export default function Projects() {
 			</div>
 
 			<section className="flex justify-center">
-				<div className="grid gap-6 justify-center items-center py-16 md:grid-cols-2 md:w-[1024px]">
+				<div className="grid grid-cols-1 gap-6 justify-center items-center py-16 md:grid-cols-2 md:w-[1024px]">
 					<div
-						className="mx-auto rounded-xl p-6 bg-slate-500/10 shadow-lg space-y-3 transition
+						className="rounded-xl p-6 bg-slate-500/10 shadow-lg space-y-3 transition
 				    duration-150 ease-in-out hover:bg-slate-500/20 hover:ring-lime-500/30 hover:-translate-y-1 group"
 					>
 						<div className="flex justify-between items-center">
@@ -62,15 +62,15 @@ export default function Projects() {
 							data, appointments, and medical records.
 						</p>
 
-						<div className="flex text-sm text-lime-500">
+						<div className="flex gap-3 text-sm text-lime-500">
 							<p className="pr-3 border-r-2">C#</p>
-							<p className="pr-3 pl-3 border-r-2">.NET Core</p>
-							<p className="pl-3">SQLite</p>
+							<p className="pr-3 border-r-2">.NET Core</p>
+							<p>SQLite</p>
 						</div>
 					</div>
 
 					<div
-						className="mx-auto rounded-xl p-6 bg-slate-500/10 shadow-lg space-y-3 transition
+						className="rounded-xl p-6 bg-slate-500/10 shadow-lg space-y-3 transition
 				    duration-150 ease-in-out hover:bg-slate-500/20 hover:ring-lime-500/30 hover:-translate-y-1 group"
 					>
 						<div className="flex justify-between items-center">
@@ -113,15 +113,15 @@ export default function Projects() {
 							appointments, and medical records.
 						</p>
 
-						<div className="flex text-sm text-lime-500">
-							<p className="pr-3 border-r-2">NEXT.js</p>
-							<p className="pr-3 pl-3 border-r-2">TailwindCSS</p>
-							<p className="pl-3">TypeScript</p>
+						<div className="flex gap-3 text-sm text-lime-500">
+							<p className="pr-3 border-r-2">Next.js</p>
+							<p className="pr-3 border-r-2">TailwindCSS</p>
+							<p>TypeScript</p>
 						</div>
 					</div>
 
 					<div
-						className="mx-auto rounded-xl p-6 bg-slate-500/10 shadow-lg space-y-3 transition
+						className="rounded-xl p-6 bg-slate-500/10 shadow-lg space-y-3 transition
 				    duration-150 ease-in-out hover:bg-slate-500/20 hover:ring-lime-500/30 hover:-translate-y-1 group"
 					>
 						<div className="flex justify-between items-center">
@@ -150,10 +150,10 @@ export default function Projects() {
 							from detailed explanations.
 						</p>
 
-						<div className="flex text-sm text-lime-500">
+						<div className="flex gap-3 text-sm text-lime-500">
 							<p className="pr-3 border-r-2">React</p>
-							<p className="pr-3 pl-3 border-r-2">TypeScript</p>
-							<p className="pl-3">TailwindCSS</p>
+							<p className="pr-3 border-r-2">TypeScript</p>
+							<p>TailwindCSS</p>
 						</div>
 					</div>
 				</div>
