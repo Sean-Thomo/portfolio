@@ -3,66 +3,121 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
-:root {
-	--mainColor: #0c121b;
-	--secondaryColor: #9fef00;
-	--textColor: #a4b1cd;
-	--textLight: #ffffff;
-	--textMuted: #8b9bb3;
-	--primaryLight: #141d2b;
-	--primaryDark: #0a0f16;
-}
-
-@media (prefers-color-scheme: dark) {
-}
-
+/* Base styles */
 * {
 	font-family: "Fira Code", monospace;
 }
 
+/* Reusable color classes */
+@layer components {
+	.bg-theme-primary {
+		@apply bg-primary;
+	}
+
+	.bg-theme-primary-light {
+		@apply bg-primary-light;
+	}
+
+	.bg-theme-primary-dark {
+		@apply bg-primary-dark;
+	}
+
+	.text-theme-primary {
+		@apply text-primary;
+	}
+
+	.text-theme-secondary {
+		@apply text-secondary;
+	}
+
+	.text-theme-text {
+		@apply text-text;
+	}
+
+	.text-theme-text-light {
+		@apply text-text-light;
+	}
+
+	.text-theme-text-muted {
+		@apply text-text-muted;
+	}
+
+	.border-theme-secondary {
+		@apply border-secondary;
+	}
+
+	.hover-text-theme-secondary {
+		@apply hover:text-secondary;
+	}
+
+	.hover-bg-theme-secondary {
+		@apply hover:bg-secondary;
+	}
+
+	.hover-text-theme-text-light {
+		@apply hover:text-text-light;
+	}
+
+	.focus-ring-theme-secondary {
+		@apply focus:ring-secondary/30;
+	}
+
+	.bg-theme-mirage-900 {
+		@apply bg-mirage-900;
+	}
+
+	/* Group hover utilities */
+	.group-hover-text-theme-text-light {
+		@apply group-hover:text-text-light;
+	}
+
+	/* Additional hover states */
+	.hover-bg-theme-mirage-900 {
+		@apply hover:bg-mirage-900;
+	}
+
+	/* Focus utilities */
+	.focus-outline-none {
+		@apply focus:outline-none;
+	}
+}
+
+/* Header and navigation styles */
 header nav span {
-	color: var(--secondaryColor);
+	@apply text-secondary;
 }
 
 header .nav-btn {
-	padding: 5px;
-	cursor: pointer;
-	background: transparent;
-	border: none;
-	outline: none;
-	color: var(--textColor);
+	@apply p-1 cursor-pointer bg-transparent border-none outline-none text-text;
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.5rem;
 }
 
 h3 {
-	color: var(--textColor);
+	@apply text-text;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 1px;
 }
 
-/* width */
+/* Scrollbar styles */
 ::-webkit-scrollbar {
 	width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-	background: var(--mainColor);
+	@apply bg-primary;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-	background: var(--secondaryColor);
-	border-radius: 16px;
+	@apply bg-secondary rounded-2xl;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: transparent;
 }
 
+/* Mobile navigation styles */
 @media only screen and (max-width: 700px) {
 	header .nav-btn {
 		visibility: visible;
@@ -80,7 +135,7 @@ h3 {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--mainColor);
+		@apply bg-primary;
 		transition: 1s;
 		transform: translateY(-100vh);
 	}

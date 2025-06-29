@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function About() {
 	return (
-		<section className="bg-primary text-text px-4">
+		<section className="bg-theme-primary text-theme-text px-4">
 			<div className="flex justify-center">
 				<div
 					id="about"
 					className="grid gap-4 justify-center items-center mx-10 sm:grid-cols-3 md:w-[1024px]"
 				>
 					<h2 className="flex justify-start">
-						<span className="text-secondary">01. </span>About Me
+						<span className="text-theme-secondary">01. </span>About Me
 					</h2>
-					<hr className="h-1 border-0 rounded bg-secondary col-span-2" />
+					<hr className="h-1 border-0 rounded bg-theme-secondary col-span-2" />
 				</div>
 			</div>
 
@@ -43,44 +43,43 @@ export default function About() {
 					<div className="grid grid-cols-2">
 						<ul>
 							<li className="flex items-center">
-								<span className="m-2 text-secondary"> &gt; </span>
+								<span className="m-2 text-theme-secondary"> &gt; </span>
 								TypeScript
 							</li>
 							<li className="flex items-center">
-								<span className="m-2 text-secondary"> &gt; </span>
+								<span className="m-2 text-theme-secondary"> &gt; </span>
 								JavaScript
 							</li>
 							<li className="flex items-center">
-								<span className="m-2 text-secondary"> &gt; </span>
+								<span className="m-2 text-theme-secondary"> &gt; </span>
 								Java
 							</li>
 							<li className="flex items-center">
-								<span className="m-2 text-secondary"> &gt; </span>
+								<span className="m-2 text-theme-secondary"> &gt; </span>
 								Python
 							</li>
 						</ul>
 						<ul>
 							<li className="flex items-center">
-								<span className="m-2 text-secondary"> &gt; </span>
+								<span className="m-2 text-theme-secondary"> &gt; </span>
 								React.js / Next.js
 							</li>
 							<li className="flex items-center">
-								<span className="m-2 text-secondary"> &gt; </span>
+								<span className="m-2 text-theme-secondary"> &gt; </span>
 								Tailwind CSS
 							</li>
 							<li className="flex items-center">
-								<span className="m-2 text-secondary"> &gt; </span>
+								<span className="m-2 text-theme-secondary"> &gt; </span>
 								SQL
 							</li>
 							<li className="flex items-center">
-								<span className="m-2 text-secondary"> &gt; </span>
+								<span className="m-2 text-theme-secondary"> &gt; </span>
 								Node.js
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			{/* </div> */}
 		</section>
 	);
 }
