@@ -8,6 +8,15 @@
 	font-family: "Fira Code", monospace;
 }
 
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: rgb(2 6 23); /* slate-950 */
+		color: rgb(203 213 225); /* slate-300 */
+		color-scheme: dark;
+	}
+}
+
 /* Header and navigation styles */
 header .nav-btn {
 	visibility: hidden;
@@ -23,10 +32,19 @@ header .nav-btn {
 /* Scrollbar styles */
 ::-webkit-scrollbar {
 	width: 8px;
+	background-color: rgb(2 6 23); /* slate-950 */
 }
 
-::-webkit-scrollbar-thumb:hover {
-	background: transparent;
+::-webkit-scrollbar-thumb {
+	background: rgb(69, 104, 1) /* #9fef00 */;
+	border-radius: 16px;
+	opacity: 0.5;
+	width: 7px;
+}
+
+/* Desktop navigation styles */
+.nav-menu {
+	flex-direction: row;
 }
 
 /* Mobile navigation styles */
@@ -36,28 +54,28 @@ header .nav-btn {
 		opacity: 1;
 	}
 
-	header nav {
+	.nav-menu {
 		position: fixed;
 		top: 0;
 		left: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
+		height: 100vh;
+		width: 100vw;
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		gap: 1.5rem;
-		transition: 1s;
+		background-color: rgb(2 6 23); /* slate-950 */
+		transition: transform 0.7s ease-in-out;
 		transform: translateY(-100vh);
+		z-index: 50;
 	}
 
-	header .responsive-nav {
-		transform: none;
+	.nav-menu.responsive-nav {
+		transform: translateY(0);
 	}
 
-	nav .nav-close-btn {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
+	.nav-close-btn {
+		position: fixed !important;
+		top: 1.5rem !important;
+		right: 1.5rem !important;
+		z-index: 51;
 	}
 }

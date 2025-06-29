@@ -13,8 +13,8 @@ export default function Navbar() {
 	return (
 		<section className="sm:flex sm:justify-center">
 			<header
-				className="top-0 sticky flex items-center justify-between h-16 z-40 px-4 
-      sm:w-[1000px] md:px-8 lg:px-12"
+				className="sticky flex items-center justify-between h-16 z-40 
+      sm:w-[1000px]"
 			>
 				<a href="/" className="text-lime-500 text-3xl font-black">
 					<svg
@@ -26,10 +26,13 @@ export default function Navbar() {
 						<use xlinkHref="/appIcons.svg#logo" />
 					</svg>
 				</a>
-				<nav ref={navRef} className="flex items-center text-slate-300">
+				<nav
+					ref={navRef}
+					className="nav-menu flex justify-center items-center text-slate-300"
+				>
 					<a
 						href="/"
-						className="hover:text-lime-500 mx-4 md:mx-6 lg:mx-8 "
+						className="hover:text-lime-500 mx-4 md:mx-6 lg:mx-8"
 						onClick={showNavbar}
 					>
 						<span className="text-lime-500">00.</span> Home
@@ -56,7 +59,7 @@ export default function Navbar() {
 						<span className="text-lime-500">03.</span> Contact
 					</a>
 					<button
-						className="m-5 nav-btn nav-close-btn md:hidden"
+						className="nav-close-btn m-5 nav-btn absolute top-6 right-6 md:hidden"
 						onClick={showNavbar}
 					>
 						<svg className="text-lime-500" width={24} height={24}>
@@ -64,10 +67,7 @@ export default function Navbar() {
 						</svg>
 					</button>
 				</nav>
-				<button
-					className="m-5 nav-btn nav-open-btn md:hidden"
-					onClick={showNavbar}
-				>
+				<button className="m-5 nav-btn md:hidden" onClick={showNavbar}>
 					<svg className="text-lime-500" width={24} height={24}>
 						<use xlinkHref="/appIcons.svg#bars" />
 					</svg>
