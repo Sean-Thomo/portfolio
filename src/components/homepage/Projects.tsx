@@ -3,34 +3,34 @@ import Link from "next/link";
 
 export default function Projects() {
 	return (
-		<section className="bg-theme-primary text-theme-text px-4">
+		<section className="mx-10">
 			<div className="flex justify-center">
 				<div
 					id="projects"
-					className="grid gap-4 justify-center items-center mx-10 sm:grid-cols-3 md:w-[1024px]"
+					className="grid gap-4 justify-center items-center sm:grid-cols-3 md:w-[1024px]"
 				>
-					<hr className="h-1 border-0 rounded bg-theme-secondary col-span-2" />
+					<hr className="h-1 border-0 rounded bg-lime-600 col-span-2" />
 					<h2 className="flex justify-end">
-						<span className="text-theme-secondary">02. </span>Projects
+						<span className="text-lime-500">02. </span>Projects
 					</h2>
 				</div>
 			</div>
 
-			<div className="grid justify-center flex-col md:flex-row">
-				<div className="grid gap-6 justify-center items-center py-16 sm:grid-cols-2 lg:grid-cols-3">
+			<section className="flex justify-center">
+				<div className="grid gap-6 justify-center items-center py-16 md:grid-cols-2 md:w-[1024px]">
 					<div
-						className="w-[19em] mx-auto rounded-xl p-6 bg-theme-primary-light shadow-lg space-y-3 transition
-				    duration-150 ease-in-out hover-bg-theme-mirage-900 hover:ring-mirag hover:-translate-y-1 group"
+						className="mx-auto rounded-xl p-6 bg-slate-500/10 shadow-lg space-y-3 transition
+				    duration-150 ease-in-out hover:bg-slate-500/20 hover:ring-lime-500/30 hover:-translate-y-1 group"
 					>
 						<div className="flex justify-between items-center">
-							<h1 className="text-theme-secondary group-hover-text-theme-text-light text-sm font-semibold">
+							<h1 className="text-lime-500 group-hover:text-lime-500/70 text-sm font-semibold">
 								Ubuntu Health Back-End API
 							</h1>
 
 							<div className="flex">
 								{/* <Link href="" className="m-5">
 									<svg
-										className="transition ease-in-out text-theme-text hover-text-theme-secondary
+										className="transition ease-in-out text-lime-500 hover:text-lime-500/70
                   hover:scale-110 duration-150"
 										width={24}
 										height={24}
@@ -44,7 +44,7 @@ export default function Projects() {
 									target="_blank"
 								>
 									<svg
-										className="transition ease-in-out text-theme-text hover-text-theme-secondary
+										className="transition ease-in-out text-lime-500 hover:text-lime-500/70
                   hover:scale-110 duration-150"
 										width={31}
 										height={30}
@@ -55,14 +55,14 @@ export default function Projects() {
 							</div>
 						</div>
 
-						<p className="text-theme-text group-hover-text-theme-text-light text-sm">
+						<p className="group-hover:text-lime-500/70 text-sm">
 							The Ubuntu Health API is a modern healthcare management system
 							designed to address inefficiencies in traditional healthcare
 							systems, providing a comprehensive solution for managing patient
 							data, appointments, and medical records.
 						</p>
 
-						<div className="flex text-sm text-theme-secondary">
+						<div className="flex text-sm text-lime-500">
 							<p className="pr-3 border-r-2">C#</p>
 							<p className="pr-3 pl-3 border-r-2">.NET Core</p>
 							<p className="pl-3">SQLite</p>
@@ -70,18 +70,18 @@ export default function Projects() {
 					</div>
 
 					<div
-						className="w-[19em] mx-auto rounded-xl p-6 bg-theme-primary-light shadow-lg space-y-3 transition
-				    duration-150 ease-in-out hover-bg-theme-mirage-900 hover:ring-mirag hover:-translate-y-1 group"
+						className="mx-auto rounded-xl p-6 bg-slate-500/10 shadow-lg space-y-3 transition
+				    duration-150 ease-in-out hover:bg-slate-500/20 hover:ring-lime-500/30 hover:-translate-y-1 group"
 					>
 						<div className="flex justify-between items-center">
-							<h1 className="text-theme-secondary group-hover-text-theme-text-light text-sm font-semibold">
+							<h1 className="text-lime-500 group-hover:text-lime-500/70 text-sm font-semibold">
 								Ubuntu Health (Front-End)
 							</h1>
 
 							<div className="flex">
 								{/* <Link href="" className="m-5">
 									<svg
-										className="transition ease-in-out text-theme-text hover-text-theme-secondary
+										className="transition ease-in-out text-lime-500 hover:text-lime-500/70
                   hover:scale-110 duration-150"
 										width={24}
 										height={24}
@@ -95,7 +95,7 @@ export default function Projects() {
 									target="_blank"
 								>
 									<svg
-										className="transition ease-in-out text-theme-text hover-text-theme-secondary
+										className="transition ease-in-out hover:text-lime-500/70
                   hover:scale-110 duration-150"
 										width={31}
 										height={30}
@@ -106,21 +106,21 @@ export default function Projects() {
 							</div>
 						</div>
 
-						<p className="text-theme-text group-hover-text-theme-text-light text-sm">
-							The Ubuntu Health API is a modern healthcare management system
-							designed to address inefficiencies in traditional healthcare
-							systems, providing a comprehensive solution for managing patient
-							data, appointments, and medical records.
+						<p className="group-hover:text-lime-500/70 text-sm">
+							Ubuntu Health is a modern healthcare management system designed to
+							address inefficiencies in traditional healthcare systems,
+							providing a comprehensive solution for managing patient data,
+							appointments, and medical records.
 						</p>
 
-						<div className="flex text-sm text-theme-secondary">
+						<div className="flex text-sm text-lime-500">
 							<p className="pr-3 border-r-2">NEXT.js</p>
-							{/* <p className="pr-3 pl-3 border-r-2">TailwindCSS</p> */}
-							<p className="pl-3">TailwindCSS</p>
+							<p className="pr-3 pl-3 border-r-2">TailwindCSS</p>
+							<p className="pl-3">TypeScript</p>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</section>
 	);
 }
